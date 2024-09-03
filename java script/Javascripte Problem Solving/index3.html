@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   Write a JavaScript program that uses template literals to create a dynamic message. The program should take the user's favorite programming language, their name, and the year they started learning it as inputs. Then, display a message that includes this information, formatted across multiple lines. (underlines should be dynamic)
+
+      var userName = prompt("What is your name?");
+      var favoriteLanguage = prompt(
+        "What is your favorite programming language?"
+      );
+      var startYear = prompt("What year did you start learning it?");
+
+      userName = userName.trim();
+      favoriteLanguage = favoriteLanguage.trim();
+      startYear = startYear.trim();
+
+      var underline = "-".repeat(userName.length);
+
+      var message = `
+        Name: ${userName}
+        ${underline}
+        Favorite Programming Language: ${favoriteLanguage}
+        Started Learning In: ${startYear}
+    `;
+
+      console.log(message);
+
+      alert(message);
+    </script>
+  </body>
+</html>

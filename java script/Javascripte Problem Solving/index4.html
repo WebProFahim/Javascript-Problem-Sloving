@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   Write a JavaScript program that checks if a given email address belongs to Yahoo. The program should be case-insensitive and print a message indicating whether the email is a Yahoo address or not.//
+
+      var email = prompt("Please enter your email address:");
+
+      email = email.toLowerCase();
+
+      if (email.includes("@yahoo.com")) {
+        alert("The email address belongs to Yahoo.");
+      } else {
+        alert("The email address does not belong to Yahoo.");
+      }
+    </script>
+  </body>
+</html>

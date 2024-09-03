@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Write a JavaScript program that checks whether a given character is a string or a number. The program should print a message indicating whether the given variable is a string or number.  -->
+
+    <script>
+      let input = prompt("Please enter a character:");
+
+      let convertedInput = Number(input);
+
+      if (!isNaN(convertedInput) && input.trim() !== "") {
+        alert("The input is a number.");
+      } else if (typeof input === "string") {
+        alert("The input is a string.");
+      } else {
+        alert("The input is neither a string nor a number.");
+      }
+    </script>
+  </body>
+</html>
